@@ -1,0 +1,7 @@
+Comando no GIT Bash:
+git clone "______" - para clonar repositorio remoto no PC local
+git status - Verifica o status de todos os arquivos na pasta
+git add . ou git add -a - Adiciona todos os arquivos ao controle de versao local
+CTRL + L - Limpa o screen
+git commit -m "Comentario" - cria o commit local
+git push origin main - push o commit (envia para nuvem todos os commits locais)
