@@ -3,5 +3,5 @@ Repositório criado para organizar cursos, desafios e bootcamps realizados atrav
 
 ### Links Úteis
 
-[DIO - Digital Innovation One](https://web.dio.me/home)
-[Sintaxe básica Markdown](https://www.markdownguide.org/basic-syntax/)
+- [DIO - Digital Innovation One](https://web.dio.me/home)
+- [Sintaxe básica Markdown](https://www.markdownguide.org/basic-syntax/)
