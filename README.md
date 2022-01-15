@@ -1,5 +1,5 @@
-# Desafio de projeto sobre Git / Github
-Repositório criado para o desafio de projeto.
+# DIO - Digital Innovation One
+Repositório criado para organizar cursos, desafios e bootcamps realizados através da DIO.
 
 ### Links Úteis
 
