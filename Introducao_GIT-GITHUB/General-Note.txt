@@ -5,3 +5,4 @@ git add . ou git add -a - Adiciona todos os arquivos ao controle de versao local
 CTRL + L - Limpa o screen
 git commit -m "Comentario" - cria o commit local
 git push origin main - push o commit (envia para nuvem todos os commits locais)
+git push -u origin main - push fazendo o upload do branch
