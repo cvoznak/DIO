@@ -77,3 +77,19 @@ shutdown -h now	-> desliga (shutdown -(opção) quando)
 lscpu		-> Informações facilitada sobre CPU
 lshw		-> Informações sobre o hardware
 lshw -short	-> Caminho do hardware, classe e descrição
+
+Comandos de Rede
+
+ifconfig	-> informações sobre o endereço IP (interfaces de rede)
+hostname	-> nome do computador na rede
+hostname -I	-> Endereço IP do nosso computador
+hostname -i	-> Endereço IP loopback
+who		-> Dados de quem está logado na rede
+whoami		-> Nome de quem está logado na rede
+ping 		-> Comando seguido pelo endeço de uma web page, manda mensagens para um host verificando se ele está ativo - para sair do comando Ctrl+Z
+dig 		-> Comando seguido pelo endeço de uma web page, retorna com as informações de DNS
+traceroute	-> Comando seguido pelo endeço de uma web page, retorna com o caminho do seu computador até a webpage (todos os nós)
+whois		-> Comando seguido pelo endeço de uma web page, retorna com todas as informações sobre o dominio
+finger		-> Todas as informações do usuario logado no host 
+w		-> Informações completas sobre o usuário logado na rede
+

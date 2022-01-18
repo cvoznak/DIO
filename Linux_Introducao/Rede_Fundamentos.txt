@@ -1,0 +1,25 @@
+---Definições---
+
+Rede		-> é um conjunto de equipamentos interligados de maneira a trocarem informações e compartilharem recursos.
+nó		-> cada equipamento dentro de uma rede
+Rede WAN	-> Wide Area Network ou World Area Network é uma rede geograficamente distribuida.
+Rede MAN	-> Metropolitan Area Network é uma rede metropolitana que interligam várias redes locais.
+Rede LAN	-> Local Area Network é uma rede local de uma formageral em um único prédio ou campus.
+Ordem das redes	-> WAN -> MAN -> LAN
+
+Protocos	-> É uma linguagem utilizaada pelos dispositivos ("nós") de uma rede de modo que eles consigam se entender.
+IP		-> Protocolo de Internet - Endereço IP - números que identificam seu copmputador em uma rede.
+ICMP		-> Internet Control Message Protocol - tem por objetivo prover mensagens de controle na comunicação entre nós.
+DNS		-> Domain Name Server - esse protocolo de aplicação tem por função identificar endereços IPs e manter uma tabela com os endereços dos caminhos de algumas redes
+
+Interface de redes -> no linux localizado no /dev e é criadda sob demanda.
+
+loopback	-> Interface com você mesmo, por padrão IP 127.0.0.1
+
+inet		-> IP da máquina local IPV4
+netmask		-> Separa o endereço local do publico
+broadcast	-> todos os nós da rede local
+inet6		-> IPV6
+ether		-> endereço da placa de rede, único e vem gravado na placa de rede
+
+
