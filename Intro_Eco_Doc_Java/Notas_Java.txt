@@ -1,0 +1,17 @@
+Para instalar o Jabba:
+
+ - buscar a linha de comando para o linux no GITHUB:
+    https://github.com/shyiko/jabba 
+
+Comandos:
+
+jabba ls-remote                 -> lista as versões e implementações disponíveis do JDK
+jabba install openjdk@1.11      -> instala a versão desejada
+jabba use openjdk@1.11          -> para usar e fazer a troca da versão
+java -version                   -> para verificar se está tudo certo
+jabba ls                        -> lista as versões instaladas
+
+IDE utilizada: Intellij
+
+Instalação: sudo snap install intellij-idea-community --classic
+

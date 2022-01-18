@@ -1,0 +1,35 @@
+Comandos no terminal (shell):
+
+CTRL + ALT + T  -> para abrir o terminal (shell)
+
+pwd             -> mostra o caminho onde estamos no terminal
+ls              -> mostra conteudo da pasta
+ls _________    -> mostra o conteudo dentro da pasta especificada após "ls"
+ls -l           -> listar com detalhes
+cd _________    -> entra na pasta especificada após "cd"
+cd ..           -> desce (retorna um step na hierarquia das pastas)
+mkdir _________ -> cria uma pasta com o nome especificado após "mkdir"
+cd /            -> redireciona para o diretório raiz
+man _________   -> carrega na tela o manual do comando, por exemplo "man ls"
+cd ~            -> vai para pasta pessoal
+history         -> apresenta os comandos utilizados durante a execução do terminal
+!!              -> repetição do último comando utilizado
+mv ____ _____   -> remonear, comando "mv" seguido do nome atual e depois o novo nome
+mv ____ _____   -> mover, comando "mv" seguido do nome atual e do endereço para onde queremos mover
+touch _________ -> cria um arquivo vazio com o nome especificado após o comando "touch"
+cp ______ _____ -> copia o arquivo especificado após o comando "cp" para o caminho especificado após o nome do arquivo a ser copiado
+rmdir ______    -> Apaga o diretório especificado após o comando
+rm _____        -> Apaga o arquivo especificado após o comando
+
+
+Teclas de atalho no terminal:
+
+Crtl + c        -> Cancela o comando atual em funcionamento
+Crtl + z        -> Pausa o comando atual, em primeiro plano ou segundo plano
+Crtl + d        -> faz o logout da sessão atual
+Crtl + u        -> Apaga a linha inteira
+Crtl + w        -> Apaga uma palavra na linha atual
+Crtl + r        -> Busca um comando recente
+Crtl + l        -> limpa a tela
+exit            -> sai do terminal
+TAB             -> alto completa o caminho
