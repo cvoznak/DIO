@@ -1,0 +1,23 @@
+diretório /	->Equivale a c: do windows
+
+/bin/		->Binários (executáveis) principais dos usuários
+/boot/		->Arquivos do sistema de Boot (para carregar e inicializar o sistema)
+/dev/		->Arquivos de dispositivos (drives, placas, USBs, etc)
+/etc/		->Arquivos de configuração do sistema (relacionados a personalização)
+/home/		-> Diretório dos usuários comuns do sistema
+/lib/		-> Bibliotecas essesnciais do sistema e os modulos kernel 
+/media/		-> Diretório de montagem e dispositivos
+/mnt/		-> Diretório de montagem de dispositivos - mesmo que "media"
+/opt/		-> Instalação de programas não oficiais de distribuição ou por conta do usuário
+/sbin/		-> Armazena arquivos executáveis que representam comandos administrativos. Ex.: Shutdown
+/srv/		-> Diretório para dados de serviços fornecidos pelo sistema
+/tmp/		-> Diretório para arquivos temporarios
+/usr/		-> Segunda hierarquia do sistema, onde ficam os usuários comuns do sistema e programas
+/var/		-> Diretório com arquivos variáveis gerados pelos programas do sistema. Ex.: impressora, e-mail, logs, históricos
+/root/		-> Diretório do usuário root - O usuario root é o usuario administrador do sistema e contem eleveções de sistema (super usuário)
+/proc/		-> Diretório virtual controlado pelo kernel (normalmente dentro dele estão as informações de memorias e CPU, informações sensíveis e ligadas ao kernel)
+
+Arquivos importantes
+
+cat /proc/cpuinfo	-> Arquivode informações do processador
+cat /pro/meminfo	-> Arquivo de informações da memória

@@ -20,6 +20,25 @@ touch _________ -> cria um arquivo vazio com o nome especificado após o comando
 cp ______ _____ -> copia o arquivo especificado após o comando "cp" para o caminho especificado após o nome do arquivo a ser copiado
 rmdir ______    -> Apaga o diretório especificado após o comando
 rm _____        -> Apaga o arquivo especificado após o comando
+cat ______	-> comando seguido pelo nome do arquivo que desejamos visualizar(Exibe conteúdo de arquivos no terminal)
+tac ______	-> inverte as linhas de um arquivo exibido pelo cat
+head _____	-> Mostra as 10 primeiras linhas de um arquivo txt especificado após o comando
+tail _____	-> Mostra as 10 últimas linhas de um arquivo txt especificado após o comando
+tail test.txt > test2.txt	-> Cria um novo arquivo test2.txt e coloca nele o output do tail, pode ser o head.cat 
+cal		-> Mostra o calendario do mes corrente
+cal 2022	-> Mostra o calendario de 2022
+cal March 2022	-> Mostra o calendario de March 2022
+date 		-> Mostra data e hora atual
+file _______	-> retorna o tipo do arquivo
+whatis ____	-> seguido pelo comando, fala o que o comando faz.
+find		-> busca arquivos
+grep word file.txt -> busca "word" no arquivo file.txt
+less ______	-> Exibe com paginação
+find "pasta" -name arquivo.txt -> retorna com o endereço do arquivo.txt
+rm -r *		-> Remove todos os arquivos de uma pasta
+echo "Hello"	-> determina uma saída no terminal com a msg entre aspas
+echo -e	"Hello\n"	-> com formatação, \n com quebra de linha
+	
 
 
 Teclas de atalho no terminal:
@@ -33,3 +52,28 @@ Crtl + r        -> Busca um comando recente
 Crtl + l        -> limpa a tela
 exit            -> sai do terminal
 TAB             -> alto completa o caminho
+
+Editor de texto -> nano, no terminal basta digitar nano ______ seguido do nome do arquivo que deseja editar
+
+| (pipe)	-> envia a saída de um comando para entrada de outro comando permitindo a execução de dois comandos.
+> (maior que)	-> Redireciona a saída de um comando para outro comando / arquivo (criação ou substituição)
+>> 		-> Redireciona a saída e adiciona a mesma para um comando ou arquivo
+< (menor que)	-> Direciona a entrada de um arquivo para a saída de um comando
+&		-> Este operador permite usar dois comandos e separa suas saídas no terminal
+&&		-> Este operador permite usar dois comandos, porém somente se o primeiro for executado com sucesso
+
+Comandos de sistem
+
+lspci		-> mostra todas as placas conectadas no nosso computador
+lsusb		-> dispositivos usb
+arch		-> Mostra a arquitetura do sistema que esta sendo utilizado
+uname		-> Mostra o nome do kernel
+uname -r	-> Mostra a versão do kernel
+free		-> Mostra as informações da memoria (fisica e swap - virtual)
+du -h (dir)	-> Mostra o conteudo e o uso do HD
+cat /etc/passwd	-> Mostra todos os usuarios do sistema
+reboot		-> Reinicia
+shutdown -h now	-> desliga (shutdown -(opção) quando)
+lscpu		-> Informações facilitada sobre CPU
+lshw		-> Informações sobre o hardware
+lshw -short	-> Caminho do hardware, classe e descrição
