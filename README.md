@@ -7,3 +7,6 @@ Repositório criado para organizar cursos, desafios e bootcamps realizados atrav
 - [Sintaxe básica Markdown](https://www.markdownguide.org/basic-syntax/)
 - [Guia Foca - linux](https://guiafoca.org/)
 - [Linux Online](https://bellard.org/jslinux/)
+- [Open Sanca](https://opensanca.com.br/)
+- [Sou Java](https://soujava.org.br/)
+- [DevOpsPBS](https://devopspbs.org/)
