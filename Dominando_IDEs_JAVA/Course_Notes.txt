@@ -1,0 +1,25 @@
+JAVA -> Linguagem orientada a objetos (desde maio 1995)
+
+Java é uma linguagem interpretada:
+
+Código Fonte IDE (Arquivo.java)-> Compilador JDK (compila o cód fonte em um Arquivo.class - bytecode) -> JVM interpreta para lingugem de máquina (binário) / executa o bytecode (.class)
+
+Codigo Fonte -> Legivel humano, Linguagem de programação (baixo nível e alto nível)
+Código Objeto -> Legivel somente para máquina
+
+JRE (Java Runtime Environment) -> Ambiente de Execução do Java que fornece as bibliotecas padrões do Java para o JDK compilar seu codigo e para JVM executar.
+
+Linguagem compilada (C ou C++)
+
+Código Fonte IDE -> Compilador (tranforma em código objeto - binário) -> Executado
+
+Programa -> Sequencia de instruções para o computador
+
+Código Fonte -> Compilador -> Código Objeto -> CPU (C++)
+
+
+
+
+
+
+

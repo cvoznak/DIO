@@ -6,6 +6,8 @@ pwd             -> mostra o caminho onde estamos no terminal
 ls              -> mostra conteudo da pasta
 ls _________    -> mostra o conteudo dentro da pasta especificada após "ls"
 ls -l           -> listar com detalhes
+ls -lh		-> listar com detalhes + permissões (r - read / w - write / x - Execution)
+ls -a		-> Mostra os arquivos e diretórios ocultos
 cd _________    -> entra na pasta especificada após "cd"
 cd ..           -> desce (retorna um step na hierarquia das pastas)
 mkdir _________ -> cria uma pasta com o nome especificado após "mkdir"
@@ -13,6 +15,7 @@ cd /            -> redireciona para o diretório raiz
 man _________   -> carrega na tela o manual do comando, por exemplo "man ls"
 cd ~            -> vai para pasta pessoal
 history         -> apresenta os comandos utilizados durante a execução do terminal
+history -c	-> Limpa o histórico
 !!              -> repetição do último comando utilizado
 mv ____ _____   -> remonear, comando "mv" seguido do nome atual e depois o novo nome
 mv ____ _____   -> mover, comando "mv" seguido do nome atual e do endereço para onde queremos mover
@@ -38,7 +41,18 @@ find "pasta" -name arquivo.txt -> retorna com o endereço do arquivo.txt
 rm -r *		-> Remove todos os arquivos de uma pasta
 echo "Hello"	-> determina uma saída no terminal com a msg entre aspas
 echo -e	"Hello\n"	-> com formatação, \n com quebra de linha
-	
+nl ______.txt	-> exibe o arquivo e conta o numero de linhas (não conta as linhas em branco)
+wc -l ____.txt 	-> conta as linhas de um arquivo (inclui as linhas em branco)
+wc -w ____.txt	-> conta o número de palavras de um arquivo
+
+chmod
+
+chmod 100 test.txt	-> muda a permissão de um arquivo ou diretório, sendo 100 um exemplo de Modo Octal 4-r/2-w/1-x, ordenado 1(execução) para usuario(owner), 0 (sem acesso) para grupo e 0 (sem acesso) para outros. Tudo isso aplicado ao arquivo test.txt.
+chmod 421 test.txt	-> Owner 4-read / Group 2-Write / Others 1-Execution
+chmod 300 test.txt	-> Owner 2-Write + 1-Execution / Group 0 / Others 0
+
+Ou seja somamos os valores equivalentes a permissão dejesada, variando no octal, de 0 a 7.
+acesso publico 777	
 
 
 Teclas de atalho no terminal:
@@ -77,6 +91,11 @@ shutdown -h now	-> desliga (shutdown -(opção) quando)
 lscpu		-> Informações facilitada sobre CPU
 lshw		-> Informações sobre o hardware
 lshw -short	-> Caminho do hardware, classe e descrição
+last reboot	-> Mostra as últimas informações de reinicialização do sistema
+route -n	-> Mostra a tabela de todos os IPs de roteamento do Kernel
+time (______)	-> Calcula o tempo para executar um comando(ex. time traceroute www.google.com)
+uptime		-> informações de tempo do sistema
+sudo apt update	-> Atualização do sistema
 
 Comandos de Rede
 
@@ -92,4 +111,21 @@ traceroute	-> Comando seguido pelo endeço de uma web page, retorna com o caminh
 whois		-> Comando seguido pelo endeço de uma web page, retorna com todas as informações sobre o dominio
 finger		-> Todas as informações do usuario logado no host 
 w		-> Informações completas sobre o usuário logado na rede
+
+Usuarios
+adduser nome	-> Cria um novo usuario
+sudo su		-> Troca para o usuario root (admin)
+su nomeuser	-> Muda de usuario
+passwd nome	-> Altera a senha
+lastlog		-> Exibe informações de login dos usuarios
+last		-> Mostra a todas as atividades do usuario que iniciou o sistema
+logname		-> Exibe o nome do usuario atual logado no sistema
+id		-> Mostra todos os grupos em que o usuario está
+userdel -r nome	-> Remove um usuario
+cat /etc/group	-> Mostra todos grupos do sistema
+groups		-> Exibe todos os grupos de um usuario
+addgroup nome	-> Cria um grupo
+adduser nome grupo	-> Adiciona um user a um grupo
+gpasswd -d user grupo	-> Remove um user de grupo
+groupdel nome		-> Remove um grupo
 

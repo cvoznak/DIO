@@ -1,0 +1,29 @@
+programa compactador gzip
+
+gzip ____________	-> Para compactar basta digitar o comando seguido do nome do arquivo
+gzip -9 _________	-> Para compactação com taxa máxima
+gunzip __________	-> Para descompactar temos que digitar o comando seguido do nome completo + extensão do arquivo compactado
+
+
+Programa compactador ZIP
+
+zip teste.zip teste.txt	-> Para compactar digitamos o comando ZIP + o nome a ser aplicado para o arquivo compactado que iremos criar e o arquivo a ser compaactado (original)
+			-> É possível compactar vários arquivos e diretórios, basta separar os nomes dos arquivos com espaço
+unzip teste.zip		-> Para descompactar
+
+Programa bzip2
+
+bzip2 __________	-> comando seguido pelo nome e extensão do arquivo a ser compactado
+bzip2 -d ________.bz2	-> para descompactar
+
+Programa rar
+
+rar a arquivo.rar arquivo.txt	-> Para compactar
+rar x arquivo.rar		-> Para descompactar
+
+Arquivadores -> Junta vários arquivos em um único, pode ser usado em conjunto com um compactador.
+
+TAR
+
+tar -cf aularedes.txt.tar aularedes.txt arquivo.txt	-> Arquiva os arquivos aularedes.txt e arquivo.txt no arquivo .tar
+tar -xf aularedes.txt.tar				-> Extrai os arquivos

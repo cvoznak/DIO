@@ -1,0 +1,31 @@
+Utilizando Java Version Manager:
+
+jabba ls-remote			-> Lista todos os JDKs que temos disponíveis para baixar
+jabba ls			-> Para visualizar quais versões temos instaladas nba maquina
+jabba install openjdk@1.11	-> Para instalar uma versão especifica
+
+jabba use openjdk@1.11		-> Para trocar entre as implementações
+
+java -version
+
+Palavras reservadas:
+
+abstract, continue, for, new, switch, assert, default, goto, package, synchronized, boolean,
+do, if, private, this, break, double, implements, protected, throw, byte, else, import
+public, throws, case, enum****, instanceof, return, transient, catch, extends, int, short
+try, char, final, interface, static, void, class, finally, long, strictfp, volatile, const
+float, native, super, while
+
+Classe:
+
+Estrutura basica: modificado de acesso + class + Nome com a primeira letra maiuscula representando um objeto do mundo real
+	-> Exemplo: public class Order
+
+Definição de atributo: modificador de acesso + palavra reservada + tipo do atributo ou variavel
+
+Modificadores de acesso:
+
+- public - Qualquer classe de qualquer pacote poderá acessar o atributo ou método 
+- protected - Qualquer classe definida no mesmo pacote ou subclasse
+- sem modificador - Apenas classes definidas no mesmo pacote.
+- private - Apenas a própria classe.
