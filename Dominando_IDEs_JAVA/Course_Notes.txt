@@ -17,6 +17,16 @@ Programa -> Sequencia de instruções para o computador
 
 Código Fonte -> Compilador -> Código Objeto -> CPU (C++)
 
+Repositório: https://github.com/cami-la/curso-dio-dominando-ides-java
+
+Atalhos Eclipse
+
+F2 renomeia e refatora
+Ctrl + 3 - Inserção de comandos
+Crtl + shift + f  - Corrige identação
+Ctrl + shift + o - Importa classe necessária (citada)
+Ctrl + Alt + Seta para cima ou para baixo -> Duplica o bloco para cima ou para baixa
+
 
 
 

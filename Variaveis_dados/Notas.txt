@@ -1,0 +1,127 @@
+Tipos de variáveis:
+
+Instância: Objeto			-> OOP
+Classe: classe				-> OOP
+Local: dentro de métodos		-> Objeto do curso
+Parâmetro: Na assinatura do método	-> Método
+
+Padrão de definição para criação de uma variavel:
+
+(td como interrogação é opcional)
+
+<?visibilidade?><?modificador?> tipo nome <?=valorInicial?>
+
+V (visibilidade) = "public", "protected" e "private"
+M (modificador) = "static e "final" (variáve constante)
+T (Tipo de dado) (sempre tem que ser informado, e por isso a linguagem é conhecida como fortemente tipada)
+N (Nome que é fornecido a variável)
+VI (Um valor inicial, caso se deseje)
+
+Convenções e regras:
+
+- Não devem começar com números;
+- Embore permitido, $ e _ devem ser evitados;
+- São case-sensitive;
+- Sem espaço;
+- Não pode ser as palavras reservadas do Java
+
+Boa práticas:
+
+- Sempre começar com letra minúscula;
+	int quantidadeProduto;
+- Nomes expressivos;
+- Notação camelo;
+	int quantidadeProduto;
+- Quando começar constante (final) maiúscula e separada por "_";
+	int final NUMERO_TENTATIVAS = 5;
+
+Tipos de dados:
+
+É o valor, a variação que ele pode sofrer e as operações que podemos realizar com ele
+
+Tipificação:
+	- Estática (forte) (obriga a definir o tipo já no momento da sua criação e não muda) vs Dinâmica (fraco) (durante a execução é determinado o tipo e assumido o tipo) 
+	- Primitivos (tipos mais basicos) vs Compostos (mais orientado aos objetos OOP)
+
+Tipo:
+	- Textual
+	- Numeral
+	- Lógico
+	- Objeto
+
+Numeral:	
+	byte (-128 até 127) -> byte b = 15;
+	short (-32.768 até 32.767) -> short s = -15785;
+	int (-2.147.483.648 até 2.147.483.647) (inteiro de 32 bits)-> int i = 8515785;
+	long (-9.223.372.036.854.775.808 até 9.223.373.036.854.775.807 (inteiro de 64 bits) -> long l = 5938515785LString;
+	float (+/- 3.40282347E+38) (numeros fracionados de 32 bits)-> float f = 3.14..(f); (para o float, caso não seja adicionado o (f) no final o java infere que é um double)
+	double (+/- 1.79769313486231570E+308) (numeros fracionados de 64bits) -> double d = 3.14....;
+	char (caracteres de 16-bits unicode) -> char c = '\u0084'; ou char c = 'T';
+	String (um tipo especial) -> String s= "T"; (de todos os dados citados esse é o único composto, todos os outros são primitivos)
+	boolean (true e false) -> boolean s = false;
+
+Valores default:
+	byte -> 0
+	short -> 0
+	int  -> 0
+	long  -> 0L
+	float  -> 0.0f
+	double  -> 0.0d
+	char  -> '\u0000'
+	String  -> null
+	boolean  -> false
+
+Operadores aritméticos:
+
+exp -> Expressão
+
+- pós-fixado:	exp++ ou exp-- (usa a expressão e depois soma ou subtrai, atua somente sobre um operando)
+- prefixado:	++exp ou --exp (adiciona ou subtrai e depois usa a expressão)
+- aritméticos:	+, -, *, / e % (% - mod -> resto da divisão)
+- atribuição: =, +=, -=, *=, /= e %=
+
+Exemplos:
+
+int i = ++k;	->	i = k + 1;
+int j = k--;	->	j = k; k = k - 1;
+float f = 1.5f + 4.5f;
+long l = 10398L * 5L;
+double d = 45d / 4d;
+int k = 15 % 4;
+double d = f;
+i +=5;		->	i = i + 5;
+j -=3;		->	j = j - 3;
+d /= 2.7d;	-> 	d = d / 2.7d;
+l *= 3;		-> 	l = l * 3;
+k %= 2;		->	k = k % 2;
+
+Precedências:
+
+1. Pós-fixados
+2. Prefixados
+3. Multiplicativo
+4. Aditivo
+5. Atribuição
+
+
+Conversões (Casting)
+
+É a transformação de uma determinada variável de tipo menos especifico para um tipo mais específico ou vice-versa.
+
+Tipos de casting:
+
+- Upcasting (implícito) - promove um tipo de dado de menor capacidade de representação e armazenamento para um tipo de maior capacidade.
+- Downcasting (explicito) - rebaixa um tipo maior para menor.
+
+Pode ser realizado em tipos primitivos ou objetos.
+
+Exemplos upcasting:
+
+long l;		int i = 10;		l = i;
+double d;	float f = 10.5f;	d = f;
+
+Exemplos downcasting:
+
+int i;		long l = 100; 		i = (int) l;
+float f;	double d = 10.5d;	f = (float) d;
+int i;		float f = 10.5f		i = (int) f;	
