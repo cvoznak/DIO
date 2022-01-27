@@ -1,0 +1,104 @@
+Operadores relacionais
+
+São simbolos especiais quais são capazes de realizar comparações entre determinados operandos e, em seguida, retornar um resultado.
+
+Tipo:
+- Similaridade: igual, diferente
+
+	== (Igualdade)
+	!= (Diferença)
+
+- Tamanho: maior, maior igual, menor, menor igual
+
+	> (Maior)
+	>= (Maior igual)
+	< (Menor)
+	<= (Menor igual)
+
+Sempre tera no minimo dois operandos.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Operadores lógicos
+
+São simbolos especiais quais são capazes de realizar comparações lógicas entre operandos lógicos ou expressões e, em seguida, retornar um resultado.
+
+Não é possível aplicar a numeros, somente se esses estiverem dentro de expressões.
+
+Tipos:
+
+- Conjunção
+
+	Somente é verdadeira quando ambos são verdadeiros
+	
+	- Simbologia: &&
+	- Terminologia: and (e)
+
+- Disjunção
+
+	Somente é falsa quando ambos são falsos
+
+	- Simbologia: ||
+	- Terminologia: or (ou)
+ 
+- Disjunção exclusiva
+
+	Somente é verdade quando ambos os operandos são opostos
+
+	- Simbologia: ^
+	- Terminologia: xor
+
+- Negação
+
+	Operação que inverte o valor lógico de um operando ou expressão
+
+	- Simbologia: !
+	- Terminologia: inverção
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Controle de fluxo
+
+São estruturas que tem a capacidade de direcionar o fluxo de execução do código.
+
+Fazem com que o código não seja executado de forma linear de cima para baixo, da esquerda para direita.
+
+Tipos:
+
+- Decisão: if, if-else, if-else-if, switch e operador ternário
+	Estrutura que avalia uma condição booleana ou variável para direcionar o fluxo de execução.
+	
+	if, if-else, if-else-if
+	Operador Ternário ?
+		Exemplo:
+			condição ? true : false;
+			ligado ? desliga : ligar;
+			condição ? true : null;
+			emMovimento ? freia : null;
+	switch -> Variáveis possíveis: byte, short, char, int, Enum, String
+
+- Repetição: for, while, do while
+- Interrupção: break, continue e return
+
+Boa práticas:
+
+- Switch é para valores exatos (só uma variável) e if para expressões booleanas;
+- Evitar usar default do switch para casos genéricos;
+- Evitar efeito "flash"dos if's;
+- Evitas muitos if's aninhados;
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Blocos
+
+É um grupo de 0 ou mais códigos quais trabalham em conjunto para executar uma operação.
+
+Tipos:
+
+- Locais: dentro de métodos
+
+	Para criar basta usar chaves {...}
+
+- Estáticos: dentro de classes (OOP)
+- Instância: dentro de classes (OOP)
+
